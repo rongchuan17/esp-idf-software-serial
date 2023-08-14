@@ -74,7 +74,7 @@ void sw_del(SwSerial *self)
 
 uint32_t getCycleCount()
 {
-    return esp_cpu_get_cycle_countt();
+    return esp_cpu_get_cycle_count();
 }
 
 #define WaitBitTime(wait) \
