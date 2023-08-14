@@ -51,7 +51,7 @@ SwSerial *sw_new(gpio_num_t Tx, gpio_num_t Rx, bool Inverse, int buffSize)
             gpio_set_level(Tx, !Inverse); 
             // Too short leads to sticky bags
             // One byte of time 9600 104us * 10 115200 18us
-            vTaskDelay(2 / portTICK_RATE_MS);
+            vTaskDelay(2 / portTICK_PERIOD_MS);
 
             return tmp;
         }
