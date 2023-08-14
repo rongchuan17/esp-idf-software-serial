@@ -53,7 +53,7 @@ int app_main()
                     printf("%02X ", sw_read(tmp));
                 }
 
-                printf("\nrecv sw_any %02u %02u %02u \n", sw_any(tmp), tmp->inPos, tmp->outPos);
+                printf("\nrecv sw_any %02u %02lu %02lu \n", sw_any(tmp), tmp->inPos, tmp->outPos);
 
             }
 
