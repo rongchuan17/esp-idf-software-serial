@@ -11,7 +11,7 @@ http://www.opensource.org/licenses/mit-license.php
 #include <freertos/task.h>
 #include <freertos/portmacro.h>
 
-#include <esp32/clk.h>
+#include <soc/clk_tree_defs.h>
 #include <driver/gpio.h>
 #include <soc/cpu.h>
 
