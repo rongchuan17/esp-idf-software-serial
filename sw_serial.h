@@ -40,11 +40,11 @@ SwSerial *sw_new(gpio_num_t Tx, gpio_num_t Rx, bool Inverse, int buffSize)
         if (NULL != tmp->buffer)
         {
             tmp->rxPin = Rx;
-            gpio_pad_select_gpio(Rx);
+            gpio_reset_pin(Rx);
             gpio_set_direction(Rx, GPIO_MODE_INPUT);
 
             tmp->txPin = Tx;
-            gpio_pad_select_gpio(Tx);
+            gpio_reset_pin(Tx);
             gpio_set_direction(Tx, GPIO_MODE_OUTPUT);
 
             // For the TTL level of positive logic, the starting bit is the low level of one bit time.
