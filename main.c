@@ -12,7 +12,7 @@ http://www.opensource.org/licenses/mit-license.php
 int app_main()
 {
     SwSerial *tmp = sw_new(22, 21, false, 512);
-    printf("%u\n", tmp->bitTime);
+    printf(“%lu\n", tmp->bitTime);
     if (tmp != NULL)
     {
         
