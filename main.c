@@ -30,19 +30,19 @@ int app_main()
         {
             sw_write(tmp, (uint8_t)i);
         }
-        vTaskDelay(500 / portTICK_RATE_MS);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
 
         puts("sw_write test");
         for (size_t i = 127; i < 256; i++)
         {
             sw_write(tmp, (uint8_t)i);
         }
-        vTaskDelay(500 / portTICK_RATE_MS);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
 
         while (true)
         {
             
-            vTaskDelay(1000 / portTICK_RATE_MS);
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
             puts("check recvd data");
             int len = sw_any(tmp);
             
