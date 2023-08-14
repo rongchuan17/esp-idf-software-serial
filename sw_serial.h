@@ -221,7 +221,7 @@ esp_err_t sw_open(SwSerial *self, uint32_t baudRate)
             break;
     }
     
-    // printf("sw_open %u %d\n", self->rx_start_time, self->rx_end_time);
+    // printf("sw_open %lu %d\n", self->rx_start_time, self->rx_end_time);
 
     sw_write(self, 0x00); // Initialization uart link
 
