@@ -13,7 +13,7 @@ http://www.opensource.org/licenses/mit-license.php
 
 #include <soc/clk_tree_defs.h>
 #include <driver/gpio.h>
-#include <soc/cpu.h>
+#include <esp_cpu.h>
 
 #define SW_EOF -1 
 
