@@ -117,4 +117,3 @@ const mp_obj_module_t serial_module = {
     .base = { &mp_type_module },
     .globals = (mp_obj_dict_t*)&serial_module_globals,
 };
-STATIC MP_REGISTER_MODULE(MP_QSTR_cexample, example_user_cmodule, 1);
