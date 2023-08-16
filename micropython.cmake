@@ -3,7 +3,7 @@ add_library(usermod_serial INTERFACE)
 
 # Add our source files to the library.
 target_sources(usermod_serial INTERFACE
-    ${CMAKE_CURRENT_LIST_DIR}/modeserial.c
+    ${CMAKE_CURRENT_LIST_DIR}/modserial.c
 )
 
 # Add the current directory as an include directory.
